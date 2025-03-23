@@ -8,15 +8,18 @@ This project fine-tunes a GPT model using **Hugging Face Transformers** and **da
 - Hugging Face Transformers
 - PyTorch
 - Datasets (Hugging Face Hub)
-- Jupyter Notebook
+- Google Colab
 
 ## 🚀 Installation & Setup
-### 1️⃣ Install Dependencies
-```bash
-pip install transformers datasets huggingface_hub torch --quiet
+### 1️⃣ Run on Google Colab
+This project is designed to run on **Google Colab**. Simply open the notebook and run the cells.
+
+### 2️⃣ Install Dependencies
+```python
+!pip install transformers datasets huggingface_hub torch --quiet
 ```
 
-### 2️⃣ Load & Fine-Tune GPT Model
+### 3️⃣ Load & Fine-Tune GPT Model
 ```python
 import torch
 from datasets import load_dataset
@@ -30,7 +33,7 @@ tokenizer = AutoTokenizer.from_pretrained("gpt2")
 model = AutoModelForCausalLM.from_pretrained("gpt2")
 ```
 
-### 3️⃣ Train the Model
+### 4️⃣ Train the Model
 ```python
 training_args = TrainingArguments(
     output_dir="./results",
@@ -61,4 +64,8 @@ trainer.train()
 - Apply **LoRA (Low-Rank Adaptation)** for efficient fine-tuning.
 - Deploy model using **Gradio or Hugging Face Spaces**.
 
+## 📜 License
+This project is licensed under the MIT License.
 
+## 🤝 Contributing
+Feel free to **fork this repo**, submit **issues** and **pull requests**. Contributions are welcome!
