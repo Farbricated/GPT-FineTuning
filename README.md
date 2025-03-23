@@ -13,7 +13,7 @@ This project fine-tunes a GPT model using **Hugging Face Transformers** and **da
 ## 🚀 Installation & Setup
 ### 1️⃣ Install Dependencies
 ```bash
-pip install transformers datasets huggingface_hub torch
+pip install transformers datasets huggingface_hub torch --quiet
 ```
 
 ### 2️⃣ Load & Fine-Tune GPT Model
