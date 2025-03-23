@@ -2,8 +2,8 @@
 __pycache__/
 *.py[cod]
 
-# Ignore Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Ignore Google Colab files
+.colab/
 
 # Ignore virtual environments
 venv/
@@ -24,11 +24,8 @@ datasets/
 *.json
 *.tsv
 
-# Ignore Jupyter notebook execution outputs
+# Ignore Colab-specific temporary files
 *.out
 *.log
-*.ipynb_checkpoints/
-
-# Ignore temporary files
 .DS_Store
 Thumbs.db
