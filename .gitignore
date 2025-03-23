@@ -23,3 +23,12 @@ datasets/
 *.csv
 *.json
 *.tsv
+
+# Ignore Jupyter notebook execution outputs
+*.out
+*.log
+*.ipynb_checkpoints/
+
+# Ignore temporary files
+.DS_Store
+Thumbs.db
